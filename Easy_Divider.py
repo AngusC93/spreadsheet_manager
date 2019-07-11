@@ -3,7 +3,7 @@
 #  ANGUS CLARKE JULY 2019     #
 
 import openpyxl
-import os
+import os, time
 
 
 print("Example path: C://Users//Directory_with_xlsx_file")
@@ -14,13 +14,6 @@ input_file_name = input("Enter Spreadsheet Name: ") + ".xlsx"
 
 print("Do not add file extension")
 output_file_name = input("Enter Output Name: ") + ".xlsx"
-
-
-
-
-
-
-
 
 
 
@@ -61,3 +54,4 @@ for idx in range(13, sheet.max_row-2):
 
 print("Completed. Have a nice day.")
 wb.save(output_file_name)
+time.sleep(5)
