@@ -1,4 +1,3 @@
-#!/usr/bin/python3.7
 #  EXCEL DONOR SUMMARY REPORT #
 #  ANGUS CLARKE JULY 2019     #
 
