@@ -5,14 +5,14 @@ import openpyxl
 import os, time
 
 
-print("Example path: C://Users//Directory_with_xlsx_file")
+print("\nExample path: C://Users//Directory_with_xlsx_file")
 file_path = input("Enter file path: ")
 
-print("Do not add file extension")
-input_file_name = input("Enter Spreadsheet Name: ") + ".xlsx"
 
-print("Do not add file extension")
-output_file_name = input("Enter Output Name: ") + ".xlsx"
+input_file_name = input("Enter Spreadsheet Name (Do not add .xlsx): ") + ".xlsx"
+
+
+output_file_name = input("Enter Output Name (Do not add .xlsx): ") + ".xlsx"
 
 
 
