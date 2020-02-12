@@ -10,7 +10,7 @@ from os import chdir
 # ____________TKINTER INITIALISATIONS_____________ #
 
 window = tkinter.Tk(className="spreadsheet manager")
-window.geometry("650x600")
+window.geometry("660x600")
 window.filename = 'Empty'
 window.directory = 'Empty'
 buttonVal= tkinter.IntVar()
@@ -36,7 +36,7 @@ def showChoice2():
 
 def output2():
     window.directory = filedialog.askdirectory(mustexist=True)
-    tkinter.Label(window, text=window.directory, justify=tkinter.LEFT, padx=20, font=12).place(x=20, y=400)
+    tkinter.Label(window, text=window.directory, justify=tkinter.LEFT, padx=20, font=12).place(x=0, y=430)
 
 
 def openFiles():
@@ -219,15 +219,15 @@ for val, spreadsheet in enumerate(spreadsheets):
 
 file = tkinter.Button(window, text='Open File', width=25, command=showChoice2, font=12).place(x=200, y=200)
 
-tkinter.Label(window, text='Output file name: ', font=20).place(x=20, y=300)
+tkinter.Label(window, text='Output file name: ', font=20).place(x=20, y=320)
 
 outputName = tkinter.StringVar()
 
-entry = tkinter.Entry(window, textvariable=outputName, width=25, bd=2, font=22).place(x=200, y=300)
+entry = tkinter.Entry(window, textvariable=outputName, width=25, bd=2, font=22).place(x=200, y=320)
 
-directoryButton = tkinter.Button(window, text='Output Folder', width=25, command=output2, font=12).place(x=200, y=350)
+directoryButton = tkinter.Button(window, text='Output Folder', width=25, command=output2, font=12).place(x=200, y=370)
 
-createButton = tkinter.Button(window, text='Create', width=25, command=create, font=12).place(x=200, y=450)
+createButton = tkinter.Button(window, text='Create', width=25, command=create, font=12).place(x=200, y=475)
 
 exitButton = tkinter.Button(window, text='Exit', width=25, command=window.destroy, font=12).place(x=350, y=550)
 
