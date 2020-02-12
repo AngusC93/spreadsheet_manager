@@ -1,4 +1,4 @@
-<h1>SpreadSheet Manager V2.01</h1><br>
+<h1>SpreadSheet Manager V2.12</h1><br>
 
 A spreadsheet manager to easily calculate finance totals in a standalone program. <br>
 
